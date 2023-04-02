@@ -1,8 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 
 public class BJ2751 {
     public static void main(String[] args) throws IOException {
@@ -10,16 +9,15 @@ public class BJ2751 {
         StringBuilder sb = new StringBuilder();
 
         int N = Integer.parseInt(br.readLine());
-
-        ArrayList<Integer> list = new ArrayList<>();
+        int arr[] = new int[N];
 
         for (int i = 0; i < N; i++) {
-            list.add(Integer.parseInt(br.readLine()));
+            arr[i] = Integer.parseInt(br.readLine());
         }
-        Collections.sort(list);
+        Arrays.sort(arr);
 
         for (int i = 0; i < N; i++) {
-            sb.append(list.get(i)).append("\n");
+            sb.append(arr[i]).append("\n");
         }
         System.out.print(sb);
     }
