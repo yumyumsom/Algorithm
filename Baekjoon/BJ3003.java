@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class BJ_3003 {
+public class BJ3003 {
     public static void main(String[] args) throws IOException {
 //        Scanner sc = new Scanner(System.in);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));   //입력 받을준비
