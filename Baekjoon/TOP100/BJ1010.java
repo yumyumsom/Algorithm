@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-//다리놓기
 public class BJ1010 {
 
     public static void main(String[] args) throws IOException {
