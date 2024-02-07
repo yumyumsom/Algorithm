@@ -10,22 +10,19 @@ public class BJ1269 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
-        HashSet<Integer> num = new HashSet();
-        st = new StringTokenizer(br.readLine());
 
-        int ans;
-        for (ans = 0; ans < a; ++ans) {
-            num.add(Integer.parseInt(st.nextToken()));
-        }
+        HashSet<Integer> num = new HashSet<Integer>();
 
         st = new StringTokenizer(br.readLine());
-
-        for (ans = 0; ans < b; ++ans) {
+        for (int i = 0; i < a; i++) {
             num.add(Integer.parseInt(st.nextToken()));
         }
+        st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < b; i++) {
+            num.add(Integer.parseInt(st.nextToken()));
+        }
+        int ans = Integer.parseInt((num.size() - b) + (num.size() - a) + "");
 
-        int var10000 = num.size() - b + (num.size() - a);
-        ans = Integer.parseInt("" + var10000);
         System.out.println(ans);
     }
 }
